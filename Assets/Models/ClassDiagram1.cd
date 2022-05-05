@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Non implémentée">
+    <Position X="35.471" Y="4.494" Height="0.984" Width="2.83" />
+  </Comment>
+  <Comment CommentText="Non implémntée">
+    <Position X="4.974" Y="15.587" Height="0.984" Width="2.83" />
+  </Comment>
+  <Class Name="Assets.Controllers.PlayerController">
+    <Position X="7.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAggAAAAAAAEAAAAAAAAAAABAAFAAAAEAAA=</HashCode>
+      <FileName>Assets\Controllers\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopController">
+    <Position X="7.5" Y="5.5" Width="2.25" />
+    <AssociationLine Name="shop" Type="Assets.Models.UI.ShopUI" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.625" Y="7.694" />
+        <Point X="8.625" Y="9.812" />
+        <Point X="4.5" Y="9.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAEEAAAAAAgAAAAAAABIA=</HashCode>
+      <FileName>Assets\Controllers\ShopController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="shop" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Models.Common.Entity">
+    <Position X="18.75" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAQAAAAQAAAAIAAAAAAEAAAEAAABEAA=</HashCode>
+      <FileName>Assets\Models\Common\Entity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="state" />
+      <Property Name="stats" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Models.Common.Item">
+    <Position X="10.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACACAAAAQAgCAAAAAAAAAQAAAgAAAIQEAAAAAQAABA=</HashCode>
+      <FileName>Assets\Models\Common\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Common.Stats">
+    <Position X="16.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQCAQAIACAAAAQABAAAAAAAAAgBAAAJAAAAEBBAAgg=</HashCode>
+      <FileName>Assets\Models\Common\Stats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Common.Wave">
+    <Position X="21.75" Y="5" Width="2" />
+    <AssociationLine Name="enemies" Type="Assets.Models.Enemies.Enemy" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.75" Y="6.939" />
+        <Point X="22.75" Y="7.315" />
+        <Point X="25.375" Y="7.315" />
+        <Point X="25.375" Y="8" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.074" Y="0.12" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAQEAAAA=</HashCode>
+      <FileName>Assets\Models\Common\Wave.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="enemies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Assets.Models.Common.Nexus">
+    <Position X="18.75" Y="9" Width="2.5" />
+    <InheritanceLine Type="Assets.Models.Common.Entity" FixedToPoint="true">
+      <Path>
+        <Point X="20.125" Y="7.454" />
+        <Point X="20.125" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAEAAAAAQAAAAAAAACAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Common\Nexus.cs</FileName>
+      <NewMemberFileName>Assets\Models\Enemies\Bowman.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Enemies.Enemy">
+    <Position X="24.25" Y="8" Width="2.25" />
+    <AssociationLine Name="enemyAttack" Type="Assets.Models.Enemies.EnemyAttack" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="26.5" Y="10.125" />
+        <Point X="31.062" Y="10.125" />
+        <Point X="31.062" Y="6.419" />
+        <Point X="32.5" Y="6.419" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAIAAABAQAAAAAAAAAAAABIAQAAUAAgAIAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="builder" />
+      <Field Name="enemyAttack" />
+      <Field Name="enemyFollow" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Models.Player.Mage">
+    <Position X="15.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Mage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Player.Player">
+    <Position X="14.25" Y="9.25" Width="2.5" />
+    <AssociationLine Name="abilities" Type="Assets.Models.Player.Abilities.Ability" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="11.812" />
+        <Point X="13.128" Y="11.812" />
+        <Point X="13.128" Y="15.97" />
+        <Point X="10.5" Y="15.97" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAQAAAAQAAAAAAAACAAAGAAAAAAAgAAE=</HashCode>
+      <FileName>Assets\Models\Player\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="inventory" />
+      <Field Name="abilities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Assets.Models.Player.Warrior">
+    <Position X="14" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopObserver">
+    <Position X="5.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Models\Common\ShopObserver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="shop" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Models.UI.ShopUI">
+    <Position X="2" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAACAAAACAABAgwAAAAAAAAGAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\UI\ShopUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PlayerObserver">
+    <Position X="17.5" Y="12.75" Width="1.5" />
+    <AssociationLine Name="player" Type="Assets.Models.Player.Player" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.5" Y="13.031" />
+        <Point X="17.125" Y="13.031" />
+        <Point X="17.125" Y="11" />
+        <Point X="16.75" Y="11" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.161" Y="0.058" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Models\Player\PlayerObserver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Controllers.MainUIController">
+    <Position X="23.25" Y="18" Width="2.25" />
+    <AssociationLine Name="StatsUI" Type="Assets.Models.UI.StatsUI" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.25" Y="18.768" />
+        <Point X="20.75" Y="18.768" />
+        <Point X="20.75" Y="18.348" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAQABAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAECA=</HashCode>
+      <FileName>Assets\Controllers\MainUIController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="NexusUI" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="StatsUI" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Assets.Models.UI.ArmorUI">
+    <Position X="13" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Models\UI\ArmorUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.UI.AttackDamageUI">
+    <Position X="15.25" Y="19.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Models\UI\AttackDamageUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.UI.WaveUI">
+    <Position X="17.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Models\UI\WaveUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.UI.HealthUI">
+    <Position X="19.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Models\UI\HealthUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.UI.StatsUI">
+    <Position X="18.25" Y="15.25" Width="2.75" />
+    <InheritanceLine Type="PlayerObserver" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.812" Y="13.853" />
+        <Point X="18.812" Y="14.552" />
+        <Point X="19.28" Y="14.552" />
+        <Point X="19.28" Y="15.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAQAAAAIAAAAAAIIAAEAAAFAAA=</HashCode>
+      <FileName>Assets\Models\UI\StatsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Player.Abilities.Ability1" Collapsed="true">
+    <Position X="6.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Abilities\Ability1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Player.Abilities.Ability2" Collapsed="true">
+    <Position X="8.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Abilities\Ability2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Player.Abilities.Ability3" Collapsed="true">
+    <Position X="4" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Abilities\Ability3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Player.Abilities.Ability4" Collapsed="true">
+    <Position X="10.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Abilities\Ability4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Player.Abilities.Ability">
+    <Position X="8.75" Y="15" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Player\Abilities\Ability.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Enemies.EnemyAttack">
+    <Position X="32.5" Y="6" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAgIEIQEBAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\EnemyAttack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.751" />
+  </Class>
+  <Class Name="Assets.Models.Enemies.EnemyFollow">
+    <Position X="32.5" Y="10" Width="2" />
+    <AssociationLine Name="fNexus" Type="Assets.Models.Common.FollowNexus" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="34.5" Y="11.688" />
+        <Point X="36.937" Y="11.688" />
+        <Point X="36.937" Y="11.987" />
+        <Point X="37.25" Y="11.987" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAgIQABAAAAAAAAAAAAAAAgAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Models\Enemies\EnemyFollow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="followStrategy" />
+      <Field Name="fPlayer" />
+      <Field Name="fNexus" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Bottom" Position="0.1" />
+  </Class>
+  <Class Name="Assets.Models.UI.NexusUI">
+    <Position X="23.25" Y="15" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAIAAAAAAEBAA=</HashCode>
+      <FileName>Assets\Models\UI\NexusUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Common.NexusObserver">
+    <Position X="20.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACA=</HashCode>
+      <FileName>Assets\Models\Common\NexusObserver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="nexus" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Models.Common.AttackNexus" BaseTypeListCollapsed="true">
+    <Position X="37.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Common\AttackNexus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Common.AttackPlayer" BaseTypeListCollapsed="true">
+    <Position X="37.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Common\AttackPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Controllers.SettingsController">
+    <Position X="25.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Controllers\SettingsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Common.FollowPlayer" BaseTypeListCollapsed="true">
+    <Position X="37.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\Models\Common\FollowPlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assets.Models.Common.FollowNexus" BaseTypeListCollapsed="true">
+    <Position X="37.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\Models\Common\FollowNexus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assets.Models.Factories.EntityFactory">
+    <Position X="21.75" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Factories\EntityFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Enemies.Classes.Bowman" Collapsed="true">
+    <Position X="25.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\Classes\Bowman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Enemies.Classes.Mage" Collapsed="true">
+    <Position X="29.75" Y="13.25" Width="1.5" />
+    <InheritanceLine Type="Assets.Models.Enemies.Enemy" ManuallyRouted="true">
+      <Path>
+        <Point X="25.375" Y="11.03" />
+        <Point X="25.375" Y="12.836" />
+        <Point X="30.5" Y="12.836" />
+        <Point X="30.5" Y="13.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\Classes\Mage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Enemies.Classes.Soldier" Collapsed="true">
+    <Position X="32" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\Classes\Soldier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Models.Enemies.Classes.Spearman" Collapsed="true">
+    <Position X="27.75" Y="13.25" Width="1.5" />
+    <InheritanceLine Type="Assets.Models.Enemies.Enemy" ManuallyRouted="true">
+      <Path>
+        <Point X="25.375" Y="11.03" />
+        <Point X="25.375" Y="12.815" />
+        <Point X="28.5" Y="12.815" />
+        <Point X="28.5" Y="13.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\Classes\Spearman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Controllers.EnemyController">
+    <Position X="27.75" Y="6.75" Width="3" />
+    <AssociationLine Name="Enemy" Type="Assets.Models.Enemies.Enemy">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.008" Y="0.093" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAEAAAAAAAAAAABAAAkAAAAAAAA=</HashCode>
+      <FileName>Assets\Controllers\EnemyController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Enemy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Controllers.GameController">
+    <Position X="27.75" Y="2.25" Width="3.25" />
+    <AssociationLine Name="MainUIController" Type="Assets.Controllers.MainUIController" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="31" Y="3.585" />
+        <Point X="39.67" Y="3.585" />
+        <Point X="39.67" Y="18.84" />
+        <Point X="25.5" Y="18.84" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ShopController" Type="ShopController" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="28.292" Y="2.25" />
+        <Point X="28.292" Y="1.581" />
+        <Point X="10.125" Y="1.581" />
+        <Point X="10.125" Y="6.094" />
+        <Point X="9.75" Y="6.094" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PlayerController" Type="Assets.Controllers.PlayerController" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="28.968" Y="2.25" />
+        <Point X="28.968" Y="1.581" />
+        <Point X="1.513" Y="1.581" />
+        <Point X="1.513" Y="13.48" />
+        <Point X="7.071" Y="13.48" />
+        <Point X="7.071" Y="12.999" />
+        <Point X="7.75" Y="12.999" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Instance" Type="Assets.Controllers.GameController" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="31" Y="3.812" />
+        <Point X="31.25" Y="3.812" />
+        <Point X="31.25" Y="4.438" />
+        <Point X="31" Y="4.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAwAAAAQAiAAAAAAAAQIAAAEAAAAAEABQAAAIAABAAA=</HashCode>
+      <FileName>Assets\Controllers\GameController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="MainUIController" />
+      <Field Name="WaveController" />
+      <Field Name="ShopController" />
+      <Field Name="PlayerController" />
+      <Field Name="EnemyController" />
+      <Property Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Assets.Controllers.WaveController">
+    <Position X="23.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAACAAQAA=</HashCode>
+      <FileName>Assets\Controllers\WaveController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assets.Controllers.RankingController">
+    <Position X="30" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Controllers\RankingController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Assets.Models.Enemies.IEnemyBuilder">
+    <Position X="27.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Enemies\EnemyBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Assets.Models.Common.IAttackStrategy">
+    <Position X="35.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Models\Common\IAttackStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Assets.Models.Common.IFollowStrategy" Collapsed="true">
+    <Position X="35.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\Models\Common\IFollowStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Assets.Models.Common.EntityState">
+    <Position X="19.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Models\Common\EntityState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
